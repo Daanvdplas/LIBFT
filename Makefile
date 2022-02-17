@@ -60,7 +60,7 @@ ft_atoi_binary_str.c \
 get_next_line.c \
 get_next_line_utils.c \
 ft_puthexnbr_fd.c \
-ft_free_split_str.c \
+ft_free_char_array.c \
 ft_check_malloc.c \
 ft_strjoin_free.c
 

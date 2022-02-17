@@ -69,7 +69,7 @@ int		ft_nbrlen(long long nbr);
 int		ft_count_splits(char const *s, char c);
 void	ft_puthexnbr_fd(int n, int fd);
 void	ft_check_malloc(void *pointer);
-void	ft_free_split_str(char **split_str);
+void	ft_free_char_array(char **split_str);
 char	*ft_strjoin_free(char *s1, char *s2);
 
 #endif
