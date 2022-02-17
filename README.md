@@ -1,2 +1,7 @@
 # LIBFT
-Utils for C
+
+Utils for C.
+
+# Progress
+
+Learned to make a library for C.
