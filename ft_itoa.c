@@ -68,8 +68,7 @@ char	*ft_itoa(int n)
 	}
 	i = nbr_len(x, p_n);
 	str = malloc(i * sizeof(char) + 1);
-	if (!str)
-		return (0);
+	ft_check_malloc(str, "ft_itoa");
 	str = make_str(x, str, i, p_n);
 	return (str);
 }

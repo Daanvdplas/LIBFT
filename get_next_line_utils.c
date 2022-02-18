@@ -69,7 +69,7 @@ char	*add_buffer(char *line, char *buffer, int buffer_size, int size_line)
 	char	*new_line;
 
 	new_line = (char *)malloc(size_line + 1);
-	ft_check_malloc(new_line);
+	ft_check_malloc(new_line, "add_buffer");
 	make_newline(new_line, line, buffer, buffer_size);
 	change_buffer(buffer, buffer_size);
 	free(line);

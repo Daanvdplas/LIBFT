@@ -62,7 +62,8 @@ get_next_line_utils.c \
 ft_puthexnbr_fd.c \
 ft_free_char_array.c \
 ft_check_malloc.c \
-ft_strjoin_free.c
+ft_strjoin_free.c \
+ft_filter_str.c
 
 BONUS_SRCS := \
 ft_lstadd_back.c \

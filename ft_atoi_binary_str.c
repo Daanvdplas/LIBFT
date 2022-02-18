@@ -35,7 +35,7 @@ char	*ft_atoi_binary_str(int nbr)
 	char	*binary;
 
 	binary = (char *)malloc(33 * sizeof(char));
-	ft_check_malloc(binary);
+	ft_check_malloc(binary, "ft_atoi_binary_str");
 	if (nbr < 0)
 	{
 		binary[0] = '1';

@@ -52,7 +52,7 @@ static char	**fill_spl_arr(char **split_arr, int splits, const char *s, int c)
 			hor_i++;
 		length = count_str(s, c, hor_i);
 		split_arr[vert_i] = (char *)ft_calloc(length + 1, sizeof(char));
-		ft_check_malloc(split_arr[vert_i]);
+		ft_check_malloc(split_arr[vert_i], "fill_spl_arr");
 		ft_strlcpy(split_arr[vert_i], &s[hor_i], length + 1);
 		hor_i += length;
 		vert_i++;
@@ -87,7 +87,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	splits = ft_count_splits(s, c);
 	split_arr = (char **)ft_calloc(splits + 1, sizeof(char *));
-	ft_check_malloc(split_arr);
+	ft_check_malloc(split_arr, "ft_split");
 	if (!*s || splits == 0)
 		return (split_arr);
 	if (!fill_spl_arr(split_arr, splits, s, c))

@@ -12,9 +12,13 @@
 
 #include "libft.h"
 
-void	ft_check_malloc(void *pointer)
+void	ft_check_malloc(void *pointer, char *function)
 {
 	if (!pointer)
+	{
+		ft_putendl_fd(function, 2);
+		ft_putendl_fd(": malloc error", 2);
 		exit(1);
+	}
 	return ;
 }

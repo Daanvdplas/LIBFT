@@ -43,7 +43,7 @@ char	*get_next_line(int fd)
 	if (fd < 0 || fd > 1024 || read(fd, buffer, 0) == -1)
 		return (NULL);
 	line = (char *)malloc(sizeof(char));
-	ft_check_malloc(line);
+	ft_check_malloc(line, "get_next_line");
 	line[0] = '\0';
 	line = letsgo(line, fd, buffer);
 	if (!*line)

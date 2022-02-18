@@ -68,8 +68,9 @@ char	*ft_atoi_binary_str(int nbr);
 int		ft_nbrlen(long long nbr);
 int		ft_count_splits(char const *s, char c);
 void	ft_puthexnbr_fd(int n, int fd);
-void	ft_check_malloc(void *pointer);
+void	ft_check_malloc(void *pointer, char *function);
 void	ft_free_char_array(char **split_str);
 char	*ft_strjoin_free(char *s1, char *s2);
+char	*ft_filter_str(char const *str, char c);
 
 #endif

@@ -16,9 +16,8 @@ void	*ft_calloc(size_t num, size_t size)
 {
 	int		*ptr;
 
-	ptr = malloc(num * size);
-	if (!ptr)
-		return (0);
+	ptr = (int *)malloc(num * size * sizeof(int));
+	ft_check_malloc(ptr, "ft_calloc");
 	ft_bzero(ptr, num * size);
 	return (ptr);
 }
